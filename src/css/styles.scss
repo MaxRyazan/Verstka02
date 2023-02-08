@@ -20,6 +20,11 @@ li{
   list-style-type: none;
   position: relative;
   white-space: nowrap;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+  white-space: nowrap;
   &:hover{
     &::after{
       content: '';
@@ -27,14 +32,14 @@ li{
       width: 80%;
       height: 2px;
       position: absolute;
-      top: 120%;
+      top:  calc(100% + 5px);
       left: 10%;
+      @media (max-width: 520px) {
+        width: 100%;
+        left: 0;
+      }
     }
   }
-}
-a{
-  text-decoration: none;
-  color: #000000;
 }
 
 .wrapper{
@@ -46,21 +51,34 @@ a{
 .header{
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid red;
   max-width: 1158px;
   margin: 41px 13.19% 80px 7.77%;
   display: flex;
   @media (max-width: 1280px) {
     justify-content: space-between;
   }
+  @media (max-width: 875px){
+    height: 60px;
+    .logo{
+      display: none;
+    }
+  }
 }
+
 .header__service{
   margin-left: 5.7%;
   @media (max-width: 1280px) {
     position: relative;
     top: -3px;
   }
+  @media (max-width: 875px) {
+    margin-left: 100px;
+  }
+  @media (max-width: 520px) {
+    margin-left: 7%;
+  }
 }
+
 .header__blog{
   margin-left: 135px;
   margin-right: 198px;
@@ -77,13 +95,21 @@ a{
     top: 80px;
     left: 120px;
   }
+  @media (max-width: 875px) {
+    left: 0;
+  }
   & ul{
     gap: 33px;
     @media (max-width: 1280px) {
       z-index: 50;
     }
+    @media (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
+
 .dropdown {
   width: 40px;
   height: 30px;
@@ -107,17 +133,31 @@ a{
   @media (min-width: 1281px) {
     display: none;
   }
+  @media (max-width: 875px) {
+    left: 10%;
+  }
 }
 
 .header__account{
   & ul{
     gap: 31px;
+    @media (max-width: 520px) {
+      gap: 10px;
+    }
   }
 }
+
 .header__account-first{
   padding:0 31px;
   border-right: 1px solid #DAD8D8;
+  @media (max-width: 520px){
+    padding: 0 10px;
+  }
+  @media (max-width: 479px) {
+    border: 0;
+  }
 }
+
 .header__account-second{
   margin-left: 26px;
   list-style-image: url(../images/telephone.svg);
@@ -126,7 +166,11 @@ a{
     position: relative;
     top: -5px;
   }
+  @media (max-width: 479px) {
+    display: none;
+  }
 }
+
 .hide{
   display: none;
 }
