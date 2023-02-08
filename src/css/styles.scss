@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6, ul{
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: flex;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+li{
+  list-style-type: none;
+  position: relative;
+  white-space: nowrap;
+  &:hover{
+    &::after{
+      content: '';
+      background-color: #B00000;
+      width: 80%;
+      height: 2px;
+      position: absolute;
+      top: 120%;
+      left: 10%;
+    }
+  }
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.wrapper{
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.header{
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid red;
+  max-width: 1158px;
+  margin: 41px 13.19% 80px 7.77%;
+  display: flex;
+  @media (max-width: 1280px) {
+    justify-content: space-between;
+  }
+}
+.header__service{
+  margin-left: 5.7%;
+  @media (max-width: 1280px) {
+    position: relative;
+    top: -3px;
+  }
+}
+.header__blog{
+  margin-left: 135px;
+  margin-right: 198px;
+  @media (max-width: 1390px){
+    margin-left: 105px;
+    margin-right: 168px;
+  }
+  @media (max-width: 1320px){
+    margin-left: 70px;
+    margin-right: 133px;
+  }
+  @media (max-width: 1280px) {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+  }
+  & ul{
+    gap: 33px;
+    @media (max-width: 1280px) {
+      z-index: 50;
+    }
+  }
+}
+.dropdown {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+  left: 220px;
+  top: 13px;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    top: calc(50% - 1.5px);
+    left: 0;
+    background-color: red;
+  }
+
+  @media (min-width: 1281px) {
+    display: none;
+  }
+}
+
+.header__account{
+  & ul{
+    gap: 31px;
+  }
+}
+.header__account-first{
+  padding:0 31px;
+  border-right: 1px solid #DAD8D8;
+}
+.header__account-second{
+  margin-left: 26px;
+  list-style-image: url(../images/telephone.svg);
+  & a{
+    display: inline;
+    position: relative;
+    top: -5px;
+  }
+}
+.hide{
+  display: none;
+}
