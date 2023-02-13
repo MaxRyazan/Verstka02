@@ -209,7 +209,7 @@ a{
 
 .account{
   max-width: 1215px;
-  margin: 0 auto;
+  margin: 0 auto 108px auto;
   @media (max-width: 1280px){
     max-width: 1245px;
     padding: 15px;
@@ -386,3 +386,76 @@ a{
     }
   }
 }
+
+//ACCOUNT END***************************************************************************
+
+.promo{
+  max-width: 1304px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.promo_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.promo_child{
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  &.bottom{
+    gap: 60px;
+  }
+}
+
+.promo_child-item{
+  text-align: center;
+  & img{
+    margin-bottom: 50px;
+  }
+  & h1 {
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #18191F;
+  }
+  & p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #18191F;
+  }
+}
+
+.promo_child_b_item{
+  text-align: center;
+  & img {
+    margin-bottom: 17px;
+  }
+  & h2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+  & p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+//PROMO END***************************************************************************
