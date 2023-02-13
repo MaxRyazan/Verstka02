@@ -174,3 +174,115 @@ a{
 .hide{
   display: none;
 }
+//HEADER END***************************************************************************
+
+.account{
+  max-width: 1215px;
+  margin: 0 auto;
+}
+.account_wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.account_nav{
+  & ul{
+    gap: 20px;
+    & li{
+      position: relative;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      color: rgba(214, 212, 212, 0.88);
+      &:hover{
+        color: #B00000;
+        &::after{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: '';
+          width: 80%;
+          height: 2px;
+          padding-left: 10%;
+          padding-right: 10%;
+          background-color: #B00000;
+        }
+      }
+    }
+  }
+}
+.account_description{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 26px;
+}
+.account_title {
+  & h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #2E2E2E;
+  }
+}
+.account_text{
+  & p{
+    width: 73%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.05em;
+    color: #808080;
+  }
+}
+.account_images{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.account_image_wrapper{
+  position: relative;
+  &:first-child{
+    padding-right: 23px;
+  }
+}
+.account_absolut{
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.account_buttons{
+  display: flex;
+  gap: 24px;
+}
+.button{
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  &.red{
+    background: #B00000;
+    box-shadow: 0 0 64px rgba(176, 0, 0, 0.3);
+    color: #FFFFFF;
+  }
+  &.white{
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: white;
+  }
+}
