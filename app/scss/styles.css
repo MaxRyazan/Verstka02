@@ -470,7 +470,7 @@ a:hover::after {
 
 .promo {
   max-width: 1304px;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
   padding: 0 15px;
 }
 
@@ -485,15 +485,76 @@ a:hover::after {
   justify-content: space-between;
   gap: 70px;
 }
+@media (max-width: 1280px) {
+  .promo_child {
+    gap: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .promo_child {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .promo_child {
+    gap: 0;
+  }
+}
 .promo_child.bottom {
   gap: 60px;
+}
+@media (max-width: 1280px) {
+  .promo_child.bottom {
+    gap: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .promo_child.bottom {
+    flex-direction: row;
+  }
+}
+@media (max-width: 960px) {
+  .promo_child.bottom {
+    flex-wrap: wrap;
+  }
 }
 
 .promo_child-item {
   text-align: center;
 }
+@media (max-width: 480px) {
+  .promo_child-item {
+    margin: 0 auto;
+  }
+}
 .promo_child-item img {
   margin-bottom: 50px;
+}
+@media (max-width: 1024px) {
+  .promo_child-item img {
+    margin: 0 100px;
+  }
+}
+@media (max-width: 960px) {
+  .promo_child-item img {
+    margin: 0 60px;
+  }
+}
+@media (max-width: 640px) {
+  .promo_child-item img {
+    margin: 0 35px;
+  }
+}
+@media (max-width: 520px) {
+  .promo_child-item img {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 480px) {
+  .promo_child-item img {
+    display: block;
+    margin: 0 30px;
+  }
 }
 .promo_child-item h1 {
   margin-bottom: 30px;
@@ -505,6 +566,12 @@ a:hover::after {
   font-feature-settings: "salt" on, "liga" off;
   color: #18191F;
 }
+@media (max-width: 1280px) {
+  .promo_child-item h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
 .promo_child-item p {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -514,9 +581,35 @@ a:hover::after {
   font-feature-settings: "salt" on, "liga" off;
   color: #18191F;
 }
+@media (max-width: 1280px) {
+  .promo_child-item p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .promo_child-item p {
+    margin-bottom: 40px;
+  }
+}
 
 .promo_child_b_item {
   text-align: center;
+}
+@media (max-width: 960px) {
+  .promo_child_b_item {
+    max-width: 33%;
+  }
+}
+@media (max-width: 640px) {
+  .promo_child_b_item {
+    max-width: 43%;
+  }
+}
+@media (max-width: 420px) {
+  .promo_child_b_item {
+    max-width: 100%;
+  }
 }
 .promo_child_b_item img {
   margin-bottom: 17px;
