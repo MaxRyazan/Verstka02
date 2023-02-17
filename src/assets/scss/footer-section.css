@@ -1,0 +1,116 @@
+.footer {
+  max-width: 1440px;
+  background-color: #B00000;
+  padding: 80px 110px 80px 110px;
+  position: relative;
+}
+@media (max-width: 1280px) {
+  .footer {
+    padding: 80px 50px 80px 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 120px 50px 40px 50px;
+  }
+}
+@media (max-width: 800px) {
+  .footer {
+    padding: 120px 50px 40px 30px;
+  }
+}
+@media (max-width: 640px) {
+  .footer {
+    padding: 160px 50px 40px 0;
+  }
+}
+.footer h3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-top: 104px;
+}
+
+.footer_wrapper {
+  max-width: 100%;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+}
+@media (max-width: 1440px) {
+  .footer_wrapper {
+    gap: 50px;
+  }
+}
+@media (max-width: 1280px) {
+  .footer_wrapper {
+    gap: 30px;
+  }
+}
+.footer_wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer_wrapper ul li:nth-child(1) {
+  font-weight: 700;
+}
+.footer_wrapper ul li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #E6E6E6;
+}
+@media (max-width: 640px) {
+  .footer_wrapper ul li {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+.footer_wrapper ul li:hover {
+  transform: scale(1);
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+.footer_description {
+  max-width: 296px;
+}
+.footer_description p {
+  margin-top: 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #E6E6E6;
+}
+@media (max-width: 1024px) {
+  .footer_description p {
+    position: absolute;
+    top: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .footer_description p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 800px) {
+  .footer_description img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+/*# sourceMappingURL=footer-section.css.map */
