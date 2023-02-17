@@ -1,0 +1,125 @@
+.promo{
+  max-width: 1304px;
+  margin: 0 auto 100px auto;
+  padding: 0 15px;
+}
+.promo_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.promo_child{
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  @media (max-width: 1280px){
+    gap: 40px;
+  }
+  @media (max-width: 1024px){
+    flex-direction: column;
+  }
+  @media (max-width: 480px) {
+    gap: 0;
+  }
+  &.bottom{
+    gap: 60px;
+    @media (max-width: 1280px){
+      gap: 40px;
+    }
+    @media (max-width: 1024px){
+      flex-direction: row;
+    }
+    @media (max-width: 960px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.promo_child-item{
+  text-align: center;
+  @media (max-width: 480px) {
+    margin: 0 auto;
+  }
+  & img{
+    margin-bottom: 50px;
+    @media (max-width: 1024px){
+      margin: 0 100px;
+    }
+    @media (max-width: 960px){
+      margin: 0 60px;
+    }
+    @media (max-width: 640px){
+      margin: 0 35px;
+    }
+    @media (max-width: 520px){
+      margin: 0 20px;
+    }
+    @media (max-width: 480px){
+      display: block;
+      margin: 0 30px;
+    }
+  }
+  & h1 {
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #18191F;
+    @media (max-width: 1280px){
+      font-size: 40px;
+      line-height: 52px;
+    }
+  }
+  & p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #18191F;
+    @media (max-width: 1280px){
+      font-size: 16px;
+      line-height: 30px;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.promo_child_b_item{
+  text-align: center;
+  @media (max-width: 960px) {
+    max-width: 33%;
+  }
+  @media (max-width: 640px) {
+    max-width: 43%;
+  }
+  @media (max-width: 420px) {
+    max-width: 100%;
+  }
+  & img {
+    margin-bottom: 17px;
+  }
+  & h2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+  & p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+  }
+}
