@@ -22,12 +22,41 @@ function addEvents(){
     for(let a = 0; a < array.length; a ++){
         array[a].addEventListener('click', () => {
             rotateImage(array[a])
-            hideMenu(array[a])
+            hideOtherMenu(array[a])
+            showLinks(array[a])
+            relocate(array[a])
         })
     }
 }
 
-function hideMenu(param) {
+function relocate(param){
+    if(param === serviceMenu){
+        serviceMenu.classList.toggle('relocate50')
+    }
+    if(param === companyMenu){
+        companyMenu.classList.toggle('relocate120')
+    }
+    if(param === helpMenu){
+        helpMenu.classList.toggle('relocate190')
+    }
+}
+
+function showLinks(param){
+    if(param === hostingMenu){
+        hosting.classList.toggle('hide')
+    }
+    if(param === serviceMenu){
+        service.classList.toggle('hide')
+    }
+    if(param === helpMenu){
+        help.classList.toggle('hide')
+    }
+    if(param === companyMenu){
+        company.classList.toggle('hide')
+    }
+}
+
+function hideOtherMenu(param) {
     const array = [hostingMenu, serviceMenu, helpMenu, companyMenu]
 
     for (let i = 0; i < array.length; i++) {

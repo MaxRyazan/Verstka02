@@ -79,6 +79,17 @@
   font-style: normal;
   color: #FFFFFF;
 }
+@media (max-width: 480px) {
+  .footer_wrapper ul {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    gap: 15px;
+  }
+  .footer_wrapper ul li {
+    font-size: 16px;
+  }
+}
 
 .footer_description {
   max-width: 296px;
@@ -157,6 +168,21 @@
 }
 .footer span.footer_help_mark {
   top: 200px;
+}
+
+.relocate50 {
+  transform: translate(0, -60px);
+  transition: 0.5s;
+}
+
+.relocate120 {
+  transform: translate(0, -120px);
+  transition: 0.5s;
+}
+
+.relocate190 {
+  transform: translate(0, -190px);
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=footer-section.css.map */
