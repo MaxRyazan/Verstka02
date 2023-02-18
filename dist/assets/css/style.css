@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    white-space: nowrap;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    white-space: nowrap;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+a:hover::after {
+    content: "";
+    background-color: #B00000;
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 10%;
+}
+
+@media (max-width: 520px) {
+    a:hover::after {
+        width: 100%;
+        left: 0;
+        background-color: inherit;
+    }
+}
+
+.wrapper {
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1158px;
+    margin: 41px 13.19% 80px 7.77%;
+    display: flex;
+}
+
+@media (max-width: 1280px) {
+    .header {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 875px) {
+    .header {
+        height: 60px;
+    }
+
+    .header .logo {
+        display: none;
+    }
+}
+
+.header__service {
+    margin-left: 5.7%;
+}
+
+@media (max-width: 1280px) {
+    .header__service {
+        position: relative;
+        top: -3px;
+    }
+}
+
+@media (max-width: 875px) {
+    .header__service {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header__service {
+        margin-left: 7%;
+    }
+}
+
+.header__blog {
+    margin-left: 135px;
+    margin-right: 198px;
+}
+
+@media (max-width: 1390px) {
+    .header__blog {
+        margin-left: 105px;
+        margin-right: 168px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .header__blog {
+        margin-left: 70px;
+        margin-right: 133px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .header__blog {
+        position: absolute;
+        top: 80px;
+        left: 120px;
+    }
+}
+
+@media (max-width: 875px) {
+    .header__blog {
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__blog {
+        width: 98%;
+        left: -14%;
+        background-color: #B00000;
+        z-index: 50;
+    }
+}
+
+@media (max-width: 400px) {
+    .header__blog {
+        left: -18%;
+    }
+}
+
+@media (max-width: 350px) {
+    .header__blog {
+        left: -20%;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__blog {
+        left: -22%;
+    }
+}
+
+.header__blog ul {
+    gap: 33px;
+}
+
+@media (max-width: 1280px) {
+    .header__blog ul {
+        z-index: 50;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__blog ul {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__blog ul li a {
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__blog-child {
+        color: white;
+    }
+}
+
+.dropdown {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    left: 220px;
+    top: 13px;
+    cursor: pointer;
+}
+
+.dropdown::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    top: calc(50% - 1.5px);
+    left: 0;
+    background-color: red;
+}
+
+@media (min-width: 1281px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media (max-width: 875px) {
+    .dropdown {
+        left: 10%;
+    }
+}
+
+.header__account ul {
+    gap: 31px;
+}
+
+@media (max-width: 520px) {
+    .header__account ul {
+        gap: 10px;
+    }
+}
+
+.header__account-first {
+    padding: 0 31px;
+    border-right: 1px solid #DAD8D8;
+}
+
+@media (max-width: 520px) {
+    .header__account-first {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 479px) {
+    .header__account-first {
+        border: 0;
+    }
+}
+
+.header__account-second {
+    margin-left: 26px;
+    list-style-image: url(../images/telephone.svg);
+}
+
+.header__account-second a {
+    display: inline;
+    position: relative;
+    top: -5px;
+}
+
+@media (max-width: 479px) {
+    .header__account-second {
+        display: none;
+    }
+}
+
+.hide {
+    display: none;
+}

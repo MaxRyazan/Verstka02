@@ -1,0 +1,240 @@
+.account {
+    max-width: 1215px;
+    margin: 0 auto 108px auto;
+}
+
+@media (max-width: 1280px) {
+    .account {
+        max-width: 1245px;
+        padding: 15px;
+    }
+}
+
+.account_wrapper {
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width: 960px) {
+    .account_wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 960px) {
+    .account_nav {
+        margin: 0 auto;
+    }
+}
+
+.account_nav ul {
+    gap: 20px;
+}
+
+.account_nav ul li {
+    position: relative;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(214, 212, 212, 0.88);
+}
+
+.account_nav ul li:hover {
+    color: #B00000;
+}
+
+.account_nav ul li:hover::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 80%;
+    height: 2px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #B00000;
+}
+
+.account_description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 960px) {
+    .account_description {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    }
+}
+
+.account_title {
+    margin-top: 26px;
+    margin-bottom: 34px;
+}
+
+.account_title h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #2E2E2E;
+}
+
+@media (max-width: 1280px) {
+    .account_title h1 {
+        font-size: 53px;
+        line-height: 65px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .account_title h1 {
+        font-size: 44px;
+        line-height: 54px;
+    }
+}
+
+@media (max-width: 960px) {
+    .account_title h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .account_title h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+}
+
+.account_text {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 960px) {
+    .account_text {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    }
+}
+
+.account_text p {
+    width: 73%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.05em;
+    color: #808080;
+}
+
+@media (max-width: 960px) {
+    .account_text p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.account_images {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+@media (max-width: 960px) {
+    .account_images {
+        width: 100%;
+    }
+}
+
+.account_image_wrapper {
+    position: relative;
+}
+
+.account_image_wrapper img {
+    width: 100%;
+}
+
+.account_image_wrapper:first-child {
+    padding: 0 15px;
+}
+
+@media (max-width: 960px) {
+    .account_image_wrapper {
+        margin: 0 auto;
+    }
+}
+
+.account_absolut {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.account_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width: 960px) {
+    .account_buttons {
+        margin-bottom: 50px;
+        justify-content: center;
+        gap: 20%;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .account_buttons {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .account_buttons {
+        flex-direction: column;
+    }
+}
+
+.button {
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.button.red {
+    background: #B00000;
+    box-shadow: 0 0 64px rgba(176, 0, 0, 0.3);
+    color: #FFFFFF;
+}
+
+.button.red:hover {
+    background: #ff000f;
+}
+
+.button.white {
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: white;
+}
+
+.button.white:hover {
+    border: 1px solid #ff000f;
+    color: #ff000f;
+}
